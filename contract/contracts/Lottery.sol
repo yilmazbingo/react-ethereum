@@ -3,6 +3,7 @@ pragma solidity >=0.7.0 <=0.8.4;
 
 contract Lottery {
     // address payable is the same as address, but have transfer and send members.
+    // those variables are stored in storage
     address payable public manager;
     address payable[]  public players;
     
@@ -39,3 +40,5 @@ contract Lottery {
         return players;
     }
 }   
+
+// 
