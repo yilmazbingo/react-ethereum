@@ -8,7 +8,6 @@ export const LotteryForm = ({ lotteryInstance, web3 }) => {
 
   const onEnter = async (event) => {
     event.preventDefault();
-    console.log("uil");
 
     // when we send the transaction, we have to retrieve our list of accounts from web3 obj
     const accounts = await web3.eth.getAccounts();

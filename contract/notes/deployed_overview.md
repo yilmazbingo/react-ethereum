@@ -1,5 +1,7 @@
 `lotteryInstance = await new web3.eth.Contract(JSON.parse(abi_string))`
 
+- we have to pass json data to the Contract
+
 Contract is a constructor and allows us to interact with the existing contracts that exist on the blockchain already or to create and deploy new contracts. we need to pass js object that is why we parse. First line just tells web3 that there is a contract with given interface.
 
 ## deploy

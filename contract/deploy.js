@@ -27,9 +27,9 @@ const deploy = async () => {
     console.log("Attempting to deploy from account", accounts[0]);
 
     const result = await new web3.eth.Contract(JSON.parse(abi_string))
+      // Calling deploy does not deploy anything. calling deploy starts to create an object that can be deployed to the network.
       .deploy({ data: "0x" + bytecode })
       .send({ from: accounts[0], gas: "1000000" });
-
     // this address is used in etherscan to find the account
     console.log("Contract deployed to", result.options.address);
     console.log("ABI:" + abi_string);

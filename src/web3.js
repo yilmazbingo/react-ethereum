@@ -3,7 +3,7 @@ import Web3 from "web3";
 function loadWeb3() {
   if (window.ethreum) {
     try {
-      window.web3 = new Web3(window.ethreum);
+      window.web3 = new Web3(window.ethereum);
       return window.web3;
     } catch (error) {
       if (error.code === 4001) {
